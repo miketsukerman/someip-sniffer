@@ -109,7 +109,7 @@ static bool onPacketArrivesBlockingMode(pcpp::RawPacket* packet, pcpp::PcapLiveD
 int main(int argc, char* argv[])
 {
 	// IPv4 address of the interface we want to sniff
-	std::string interfaceIPAddr = "10.0.0.1";
+	std::string interfaceIPAddr = "192.168.200.2";
 
 	// find the interface by IP address
 	pcpp::PcapLiveDevice* dev = pcpp::PcapLiveDeviceList::getInstance().getPcapLiveDeviceByIp(interfaceIPAddr);

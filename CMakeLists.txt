@@ -18,7 +18,7 @@ CPMAddPackage("gh:the-tcpdump-group/libpcap#libpcap-1.10.4")
 CPMAddPackage("gh:seladb/PcapPlusPlus@23.09")
 
 
-add_executable(SomeIpSniffer main.cpp)
+add_executable(SomeIpSniffer src/main.cpp)
 
 target_link_libraries(SomeIpSniffer spdlog::spdlog Packet++ Pcap++ CLI11::CLI11 fmt::fmt)
 
